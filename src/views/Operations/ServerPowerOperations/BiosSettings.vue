@@ -193,6 +193,7 @@
                     v-model="attributeKeys[key]"
                     :value="values.value"
                     :aria-describedby="values.value"
+                    :disabled="disabled"
                   >
                     <template v-if="values.value === 'Power Off'">{{
                       $t('pageServerPowerOperations.biosSettings.powerOff')
@@ -320,6 +321,10 @@ export default {
     attributeValues: {
       type: Object,
       default: null,
+    },
+    disabled: {
+      type: Boolean,
+      require: true,
     },
   },
   data() {
