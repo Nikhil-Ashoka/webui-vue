@@ -26,10 +26,8 @@
       ><b-row>
         <b-col sm="14" md="10" xl="6">
           <alert :show="showAlert" variant="info" class="mb-5">
-            <p class="mb-0 font-weight-bold p1">
-              {{ $t('global.toast.minMifMessage') }}:
-            </p>
-            <p class="p2">
+            <p class="mb-0 p1">{{ $t('global.toast.minMifMessage') }}:</p>
+            <p class="font-weight-bold p2">
               {{ lowestSupportedFirmwareVersion }}
             </p>
           </alert>
