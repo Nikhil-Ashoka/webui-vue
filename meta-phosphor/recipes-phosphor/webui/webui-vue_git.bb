@@ -35,7 +35,7 @@ export CXXFLAGS = "${BUILD_CXXFLAGS}"
 do_compile[network] = "1"
 do_compile () {
     cd ${S}
-    rm -rf node_modules
+    rm -rf node_modules package-lock.json
     npm --loglevel info --proxy=${http_proxy} --https-proxy=${https_proxy} install
     npm run build ${EXTRA_OENPM}
 }
