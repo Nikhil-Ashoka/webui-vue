@@ -1139,7 +1139,7 @@
     "memoryBlockSize": "Memory block size",
     "predictiveMemoryGuardHeader": "Predictive Memory Guard",
     "predictiveMemoryGuardTitle": "Predictive dynamic memory deallocation",
-    "predictiveMemoryGuardDescription": "Enable or Disable Predictive Guard for Memory Errors.",
+    "predictiveMemoryGuardDescription": "This option controls the predictive dynamic memory deallocation. If enabled, dynamic memory deallocation will happen for predictive memory callouts.",
     "requestedHugePageMemory": "Requested huge page memory",
     "slotCountForNode0": "Slot Count for Node 0",
     "systemMemoryPageSetup": "Improve the application's performance by setting large virtual memory page sizes of 16GB each.",
