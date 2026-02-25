@@ -7,6 +7,7 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 import Components from 'unplugin-vue-components/vite';
 import { BootstrapVueNextResolver } from 'unplugin-vue-components/resolvers';
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd());
@@ -31,7 +32,13 @@ export default defineConfig(({ mode }) => {
   return {
     base: './',
     plugins: [
-      vue(),
+      vue({
+        script: {
+          defineModel: true,
+          propsDestructure: true,
+        },
+      }),
+      vueJsx(),
       Components({
         resolvers: [BootstrapVueNextResolver()],
         dts: false,
@@ -66,6 +73,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     resolve: {
+      extensions: ['.ts', '.tsx', '.js', '.jsx', '.vue', '.json'],
       alias: [
         {
           find: '@',

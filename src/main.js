@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
+import { VueQueryPlugin } from '@tanstack/vue-query';
 import App from './App.vue';
 import router from './router';
 import { createBootstrap } from 'bootstrap-vue-next';
@@ -18,6 +19,17 @@ import WebSocketPlugin, {
 const pinia = createPinia();
 const app = createApp(App);
 app.use(pinia);
+app.use(VueQueryPlugin, {
+  queryClientConfig: {
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: false,
+        retry: false,
+        staleTime: 5 * 60 * 1000, // 5 minutes
+      },
+    },
+  },
+});
 app.use(router);
 app.component('IconArrowRight', ArrowRight16);
 app.use(createBootstrap({ components: true, directives: true })); // Change this line

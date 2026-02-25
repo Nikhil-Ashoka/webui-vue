@@ -21,4 +21,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+# Migration scripts (Node.js scripts, not linted)
+scripts/
 .env

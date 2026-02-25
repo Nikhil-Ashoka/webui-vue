@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 // Make calendar visible over the table
 .dropdown-menu {
   z-index: $zindex-dropdown + 1;

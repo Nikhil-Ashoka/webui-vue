@@ -2,7 +2,7 @@
   height: calc(100vh - 300px);
   display: flex;
   &.full-window {
-   height: calc(100vh - 80px); 
+    height: calc(100vh - 80px);
   }
   div:nth-child(1) {
     background: transparent !important;

@@ -417,7 +417,7 @@
     "configureSettings": "Configure settings",
     "viewDynamicNtp": "View Dynamic NTP servers",
     "dhcpNtpInfoTooltip": "This section captures the DHCP supplied NTP server details",
-    "staticNtp":"Static NTP servers",
+    "staticNtp": "Static NTP servers",
     "form": {
       "date": "Date",
       "manual": "Manual",
@@ -1175,7 +1175,7 @@
     "alert": {
       "heading": "Applying changes",
       "message1": "System has to be powered off.",
-      "message2":  "Changes made will take effect on next reboot.",
+      "message2": "Changes made will take effect on next reboot.",
       "serverMustBePoweredOffTo": "Server must be powered off to:",
       "updateActiveMemoryMirroring": "Update active memory mirror mode",
       "updateIoAdapterEnlargedCapacity": "@:pageMemory.updateIoAdapterEnlargedCapacity",

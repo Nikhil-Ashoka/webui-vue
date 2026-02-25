@@ -7,7 +7,7 @@ module.exports = {
   },
   parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: '@babel/eslint-parser',
+    parser: '@typescript-eslint/parser',
     ecmaVersion: 2021,
     sourceType: 'module',
     requireConfigFile: false,
@@ -17,7 +17,7 @@ module.exports = {
     'eslint:recommended',
     '@vue/prettier',
   ],
-  plugins: ['vitest'],
+  plugins: ['vitest', '@typescript-eslint'],
   rules: {
     'vue/multi-word-component-names': 'off',
     'no-console': 'off',
@@ -38,6 +38,13 @@ module.exports = {
   },
   ignorePatterns: ['*.timestamp-*.mjs'],
   overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      parser: 'vue-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+      },
+    },
     {
       files: [
         'vite.config.*',

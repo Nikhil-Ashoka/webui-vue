@@ -1,24 +1,27 @@
 @font-face {
   font-family: "Intel Clear";
-  src: url("~@/env/assets/fonts/Intel_Clear/IntelClear-Light-webfont.woff") format("woff");
+  src: url("~@/env/assets/fonts/Intel_Clear/IntelClear-Light-webfont.woff")
+    format("woff");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "Intel Clear";
-  src: url("~@/env/assets/fonts/Intel_Clear/IntelClear-Regular-webfont.woff") format("woff");
+  src: url("~@/env/assets/fonts/Intel_Clear/IntelClear-Regular-webfont.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Intel Clear";
-  src: url("~@/env/assets/fonts/Intel_Clear/IntelClear-Bold-webfont.woff") format("woff");
+  src: url("~@/env/assets/fonts/Intel_Clear/IntelClear-Bold-webfont.woff")
+    format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
-$classic-blue: #0068B5;
-$energy-blue: #00C7FD;
+$classic-blue: #0068b5;
+$energy-blue: #00c7fd;
 
 $primary: $classic-blue;
 
@@ -27,16 +30,15 @@ $orange: #ffa300;
 $yellow: #f3d54e;
 $green: #c4d600;
 $cyan: $energy-blue;
-$gray: #AEAEAE;
+$gray: #aeaeae;
 $dark-gray: #808080;
-$light-gray: #E9E9E9;
+$light-gray: #e9e9e9;
 $black: #000000;
 $white: #ffffff;
 
-$danger: #C81326;
-$success: #8BAE46;
-$warning: #FEC91B;
-
+$danger: #c81326;
+$success: #8bae46;
+$warning: #fec91b;
 
 $gray-100: $white;
 
@@ -47,8 +49,10 @@ $navbar-color: $classic-blue;
   fill: $light-gray !important;
 }
 
-.custom-checkbox .custom-control-input:checked~.custom-control-label::after,
-.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before,
-.custom-control-input:checked~.custom-control-label::before {
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after,
+.custom-checkbox
+  .custom-control-input:indeterminate
+  ~ .custom-control-label::before,
+.custom-control-input:checked ~ .custom-control-label::before {
   background-color: $primary !important;
 }

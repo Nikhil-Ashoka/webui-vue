@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 .btn {
   padding-top: math.div($spacer, 2);
   padding-right: $spacer;
@@ -79,8 +79,8 @@
   z-index: $zindex-dropdown + 1;
 }
 
-input[type='password']::-ms-reveal,
-input[type='password']::-ms-clear {
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
   display: none;
 }
 
